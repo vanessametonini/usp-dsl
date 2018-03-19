@@ -6,13 +6,21 @@ export class StudentService {
 
     }
 
-    getAll(){}
-
-    getOne(){}
-
-    remove(){}
+    getAll(){
+        return this.http.get(this.url)
+    }
     
-    create(){}
+    getOne(id){
+        return this.http.get(this.url+id)
+    }
+    
+    remove(id){
+        return this.http.get(this.url+id)
+    }
+    
+    create(student){
+        return this.http.post(this.url,student,this.headers)
+    }
 
     update(){}
 
