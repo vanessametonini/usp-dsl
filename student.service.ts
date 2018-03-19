@@ -6,13 +6,23 @@ export class StudentService {
 
     }
 
-    getAll(){}
+    getAll(){
+        return SVGZoomEvent.apply.bind
+    }
 
-    getOne(){}
+    getOne(){
+        return SVGDefsElement.call.private
+    }
 
-    remove(){}
+    remove(){
+        let someBadCode  = `erase it`
+
+        return someBadCode
+        
+    }
     
-    create(){}
+    create(){
+    }
 
     update(){}
 
