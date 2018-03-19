@@ -7,21 +7,19 @@ export class StudentService {
     }
 
     getAll(){
-        return SVGZoomEvent.apply.bind
-    }
-
-    getOne(){
-        return SVGDefsElement.call.private
-    }
-
-    remove(){
-        let someBadCode  = `erase it`
-
-        return someBadCode
-        
+        return this.http.get(this.url)
     }
     
-    create(){
+    getOne(id){
+        return this.http.get(this.url+id)
+    }
+    
+    remove(id){
+        return this.http.get(this.url+id)
+    }
+    
+    create(student){
+        return this.http.post(this.url,student,this.headers)
     }
 
     update(){}
